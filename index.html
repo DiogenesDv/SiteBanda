@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--framework W3Css, semelhante ao BootStrap-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Bootstrap CSS
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    -->
+
+    <!--Css-->
+    <link rel="stylesheet" href="css/css.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Banda X10!</title>
+  </head>
+  <body>
+      <!--NavBar-->
+      <div class="w3-top">
+          <div class="w3-bar w3-black w3-card" >
+            <a class="w3=bar-item w3=button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle navigation Menu"><i class="fa fa-bars"></i></a>
+
+            <a class="w3-bar-item w3-button w3-padding-large" href="#">HOME</a><!--Sem o w3-hide-small o link HOME nao se esconde em telas pequenas-->
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#banda">BANDA</a>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#Tour">TOUR</a>
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-small" href="#contatos">CONTATOS</a>
+            
+                <!--LINK MAIS com itens escondidos-->
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-button w3-padding-large" title="mais">
+                        MAIS <i class="fa fa-caret-down"></i>
+                    </button>
+                        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                            <a class="w3-bar-item w3-button" href="#">Discografia</a>
+                            <a class="w3-bar-item w3-button" href="#">Fotos Incomuns</a>
+                            <a class="w3-bar-item w3-button" href="#">Extras</a>
+                        </div>    
+                </div>
+
+                <a class="w3-padding-large w3-hover-red w3-hide-small w3-right" href="javascrip:void(0)">
+                    <i class="fa fa-search"></i><!--CRIA o Botao com Lupa buscar-->
+                </a>     
+          </div> 
+      </div>
+      <!--Fim de toda NavBar-->
+
+      <!--NavBar do Hamburguer-->
+      <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top: 46px;">
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" href="#banda">BANDA</a><!--O onclick chama a funcao myFunction() para fazer funcao de clicar e aparecer os intens de menu ocultos-->
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" href="#tour">TOUR</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" href="#contatos">CONTATOS</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" href="#">DISCOGRAFIA</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" href="#">FOTOS INCOMUNS</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()" href="#">EXTRAS</a>
+      </div>
+      <!--FIMNavBar do Hamburguer-->
+
+      <!--Conteúdo da Página-->
+    <div id="corpoSite" class="w3-content">
+        <!--Slide automatico de imagens-->
+        <div class="mySlides w3-display-container w3-center">
+            <img src="img/1.jpg" style="width: 100%; height: 715px;">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Lago Azul</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nemo, suscipit hic officia, quo ex eligendi sit magnam esse voluptates tempore provident neque quos animi vitae, totam recusandae aperiam illum!
+                </p>
+            </div>
+        </div>
+
+        <div class="mySlides w3-display-container w3-center">
+            <img src="img/2.jpg" style="width: 100%; height: 715px;">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Sul do Leste</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nemo, suscipit hic officia, quo ex eligendi sit magnam esse voluptates tempore!
+                </p>
+            </div>
+        </div>
+
+        <div class="mySlides w3-display-container w3-center">
+            <img src="img/3.jpg" style="width: 100%; height: 715px;">
+            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <h3>Barralharao</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe nemo, suscipit hic officia, quo ex eligendi sit magnam esse voluptates!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Conteúdo-->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width: 800px;" id="band">
+      <h2 class="w3-wide">A banda</h2>
+      <p class="w3-opacity"><i>Bem vindo a musica</i>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam ab, earum architecto dignissimos ex temporibus aliquam laboriosam repudiandae quaerat repellat, molestiae delectus tenetur vel praesentium incidunt rem culpa. Repudiandae, id.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias adipisci vitae placeat earum explicabo tempore, magni ratione provident quasi deserunt repellat totam nisi laudantium! Facilis ipsum laborum dignissimos repudiandae vitae?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quam sequi, harum iure excepturi tempore unde animi, minima deserunt earum totam at qui quis perspiciatis aperiam itaque recusandae optio est!
+      </p>
+
+      <div class="w3-row w3-padding-32">
+        <div class="w3-third">
+          <p>Tuilo</p>
+          <img src="img/3.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        </div>
+  
+        <div class="w3-third">
+          <p>Nacole</p>
+          <img src="img/2.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        </div>
+  
+        <div class="w3-third">
+          <p>Indomar</p>
+          <img src="img/1.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
+        </div>
+      </div>    
+    </div>
+
+    <!--Datas de Shows-->
+    <div class="w3-black" id="tour">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:800px;">
+        <h2 class="w3-wide w3-center">Datas de show</h2>
+        <p class="w3-opacity w3-center"><i>Reserve seus imgressos</i></p><br>
+        <ul class="w3-ul w3-border w3-white w3-text-gray">
+          <li class="w3-padding">Setembro <span class="w3-tag w3-red w3-margin-left">Esgotado</span></li>
+          <li class="w3-padding">Setembro <span class="w3-tag w3-red w3-margin-left">Esgotado</span></li>
+          <li class="w3-padding">Setembro <span class="w3-badge w3-black w3-margin-left">3</span></li>
+        </ul>
+
+        <div class="w3-row-padding w3-padding-32" style="margin: 0 -16px;">
+          <div class=" w3-third w3-margin-bottom">
+            <img src="img/1.jpg" alt="New York" style="width: 100%;" class="w3-hover-opacity">
+            <div class="w3-container w3-white w3-center">
+                <p><b>Bahia</b></p>
+                <p class="w3-opacity"> 15 Março 2022</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium obcaecati nihil ipsa inventore tenetur rem et optio quibusdam minus. Deserunt perspiciatis consequuntur temporibus ipsum soluta quisquam rerum cumque sapiente ipsam.</p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar Imgresso</button>
+            </div>
+          </div>
+
+          <div class=" w3-third w3-margin-bottom">
+            <img src="img/2.jpg" alt="New York" style="width: 100%;" class="w3-hover-opacity">
+            <div class="w3-container w3-white w3-center">
+                <p><b>São Paulo</b></p>
+                <p class="w3-opacity"> 22 Setembro 2022</p>
+                <p>Lorem ipsum dolor sit amet consectetur tenetur rem et optio quibusdam minus. Deserunt perspiciatis consequuntur temporibus ipsum soluta quisquam rerum cumque sapiente ipsam.</p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar Imgresso</button>
+            </div>
+          </div>
+
+          <div class=" w3-third w3-margin-bottom">
+            <img src="img/3.jpg" alt="New York" style="width: 100%;" class="w3-hover-opacity">
+            <div class="w3-container w3-white w3-center">
+                <p><b>Rio janeiro</b></p>
+                <p class="w3-opacity"> 02 Setembro 2022</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium obcaecati nihil ipsa inventore perspiciatis consequuntur temporibus tenetur rem et optio quibusdam minus. Deserunt perspiciatis consequuntur.</p>
+                <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Comprar Imgresso</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+      <!--Javascrip da pagina-->
+      <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000);    
+        }
+        
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
