@@ -1,5 +1,17 @@
 body{
     font-family: "Lato", sans-serif;
+    background: url(../img/4.jpg) scroll no-repeat fixed;
+}
+footer{
+    border: 5px solid black;
+}
+#tour{
+    /*Deixa a imagemd e fundo Fixa na div*/
+    background-image: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 .mySlides{
     display: none;
