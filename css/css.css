@@ -17,10 +17,6 @@ footer{
     display: none;
 }
 
-.bordasTeste{
-    border: 2px solid blue;
-}
-
 #corpoSite{
     max-width: 2000px;
     margin-top: 46px;
